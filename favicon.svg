@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="circ"><circle cx="512" cy="512" r="512"/></clipPath>
+    <clipPath id="headclip">
+      <path d="M292,214 Q512,150 732,214 Q756,470 588,742 L588,796 L436,796 L436,742 Q268,470 292,214 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#circ)">
+    <rect width="1024" height="1024" fill="#2EE6C4"/>
+    <!-- mesh inside head -->
+    <g clip-path="url(#headclip)" stroke="#0C1B2A" stroke-width="22" stroke-linecap="round">
+      <path d="M92,120 l840,560"/><path d="M92,280 l840,560"/><path d="M92,440 l840,560"/><path d="M92,-40 l840,560"/>
+      <path d="M932,120 l-840,560"/><path d="M932,280 l-840,560"/><path d="M932,440 l-840,560"/><path d="M932,-40 l-840,560"/>
+    </g>
+    <!-- shooting string -->
+    <path d="M330,320 Q512,272 694,320" fill="none" stroke="#0C1B2A" stroke-width="26" stroke-linecap="round" clip-path="url(#headclip)"/>
+    <!-- head outline -->
+    <path d="M292,214 Q512,150 732,214 Q756,470 588,742 L588,796 L436,796 L436,742 Q268,470 292,214 Z"
+          fill="none" stroke="#0C1B2A" stroke-width="52" stroke-linejoin="round"/>
+    <!-- handle stub -->
+    <rect x="468" y="796" width="88" height="96" rx="18" fill="#0C1B2A"/>
+  </g>
+</svg>
